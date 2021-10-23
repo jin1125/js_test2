@@ -1,11 +1,10 @@
-const myMap = new Map();
-myMap.set('id',3)
-myMap.set('name','honda')
+const fruits = [
+  'apple','banana'
+]
+fruits.push('orange')
 
-// console.log(myMap.get('name'));
+// console.log(fruits);
 
-const valueList = myMap.values();
-
-for(value of valueList){
-  console.log(value);
-}
+fruits.forEach((input)=>{
+  console.log(input);
+})
