@@ -1,24 +1,17 @@
- const postalCade = "123-4567";
+'use strict'
 
-const postal = {
-  postalCade: "123-4567",
-  checkPostalCade(){
-    const replaced =  this.postalCade.replace('-','').length
-    // const length =  replaced.length
-    if(replaced === 7){
-      return true
-    }
-    return false
-  }
+const global = 'global'
+
+function check (){
+  // const local = 'local'
+  // console.log(local);
+
+  console.log(global);
+
 }
 
-//  function checkPostalCade (string){
-//   const replaced =  string.replace('-','');
-//   const length =  replaced.length
-//   if(length === 7){
-//     return true
-//   }
-//   return false
-//  }
+// console.log(global);
+  // console.log(local);
 
- console.log(postal.checkPostalCade());
+
+check()
