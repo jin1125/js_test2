@@ -14,3 +14,36 @@ const member = {
 }
 
 console.log(member.name);
+
+const mumber_2 ={
+  honda:{
+    height:170,
+    hobby:'soccer'
+  },
+  kagawa:{
+    height:165,
+    hobby:'soccer'
+  }
+}
+
+// console.log(mumber_2.kagawa.height);
+
+const mumber_3 ={
+ "1kumi":{
+  honda:{
+    height:170,
+    hobby:'soccer'
+  },
+  kagawa:{
+    height:165,
+    hobby:'soccer'
+  }
+
+  },
+ " 2kumi":{
+    
+  }
+}
+
+console.log(mumber_3);
+
