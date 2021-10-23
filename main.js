@@ -5,4 +5,12 @@ const array_2 =[
   ['midori','murasaki','kuro']
 ];
 
-console.log(array_2[1][2]);
+// console.log(array_2[1][2]);
+
+const member = {
+  name:'honda',
+  height:170,
+  hobby:'soccer'
+}
+
+console.log(member.name);
