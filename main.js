@@ -1,46 +1,9 @@
-const test_1 = 4;
-let test_2 = 3;
-test_2 += 3;
-const test_3 = test_1 % test_2;
+const scores = [10,20,30]
 
-// console.log(test_3);
-
-const height = 91;
-
-// if(height === 90){
-//   console.log('height90');
-// }else{
-//   console.log('none');
-// }
-
-// if(height !== 90){
-//     console.log(`${height}cm`);
-//   }
-
-// const signal = 'blue';
-
-// if(signal === 'red'){
-//   console.log('stop');
-// }else if(signal === 'yellow'){
-//   console.log('one stop');
-// }else{
-//   console.log('OK');
-// }
-
-// const speed =60;
-// if(signal === 'blue'){
-//   if(speed >= 60){
-//     console.log('out');
-//   }
-// }
-
-const signal_1 = 'red';
-const signal_2 = 'blue';
-
-if(signal_1 === 'red' || signal_2 === 'blue'){
-   console.log('red & blue'); 
+for (score of scores){
+  console.log(score);
 }
 
-const score =90;
-const comment = score > 80 ? 'good' : 'not good'
-console.log(comment);
+for(let i =0;i<=10;i++){
+  console.log(i);
+}
