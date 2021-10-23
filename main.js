@@ -1,9 +1,11 @@
- const test =  '  test  ';
-//  console.log(test.trim());
+const myMap = new Map();
+myMap.set('id',3)
+myMap.set('name','honda')
 
-const str =  'Mozilla'
-// console.log(str.substring(1,3));
+// console.log(myMap.get('name'));
 
-const test3 = 'test'
-console.log(test3.replace('te','de'));
+const valueList = myMap.values();
 
+for(value of valueList){
+  console.log(value);
+}
