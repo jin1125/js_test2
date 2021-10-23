@@ -1,9 +1,19 @@
-const scores = [10,20,30]
+const data = 4 ;
 
-for (score of scores){
-  console.log(score);
-}
+switch(data){
+case 1:
+  console.log('1')
+break;
 
-for(let i =0;i<=  10;i++){
-  console.log(i);
+case 2:
+  console.log('2')
+break;
+
+case 3:
+  console.log('3')
+break;
+default:
+  console.log('none')
+  break;
+
 }
