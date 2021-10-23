@@ -13,19 +13,34 @@ const height = 91;
 //   console.log('none');
 // }
 
-const signal = 'blue';
+// if(height !== 90){
+//     console.log(`${height}cm`);
+//   }
 
-if(signal === 'red'){
-  console.log('stop');
-}else if(signal === 'yellow'){
-  console.log('one stop');
-}else{
-  console.log('OK');
+// const signal = 'blue';
+
+// if(signal === 'red'){
+//   console.log('stop');
+// }else if(signal === 'yellow'){
+//   console.log('one stop');
+// }else{
+//   console.log('OK');
+// }
+
+// const speed =60;
+// if(signal === 'blue'){
+//   if(speed >= 60){
+//     console.log('out');
+//   }
+// }
+
+const signal_1 = 'red';
+const signal_2 = 'blue';
+
+if(signal_1 === 'red' || signal_2 === 'blue'){
+   console.log('red & blue'); 
 }
 
-const speed =60;
-if(signal === 'blue'){
-  if(speed >= 60){
-    console.log('out');
-  }
-}
+const score =90;
+const comment = score > 80 ? 'good' : 'not good'
+console.log(comment);
