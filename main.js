@@ -1,7 +1,8 @@
-// let test = 123;
-// test += 123
+const array =[1,2,3];
 
-const test = 123;
-const test_2 = 'test';
+const array_2 =[
+  ['aka','ao','kiro'],
+  ['midori','murasaki','kuro']
+];
 
-console.log(typeof test);
+console.log(array_2[1][2]);
