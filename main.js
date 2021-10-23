@@ -1,19 +1,28 @@
-const data = 4 ;
-
-switch(data){
-case 1:
-  console.log('1')
-break;
-
-case 2:
-  console.log('2')
-break;
-
-case 3:
-  console.log('3')
-break;
-default:
-  console.log('none')
-  break;
-
+function test() {
+  console.log("test");
 }
+
+// test();
+
+const comment = "comment";
+
+function getComment(string) {
+  console.log(string);
+}
+
+// getComment(comment);
+
+function getNumber() {
+  return 5;
+}
+
+// console.log(getNumber())
+
+function sumPrice(int1, int2) {
+  let int3 = int1 + int2;
+  return int3;
+}
+
+const total = sumPrice(3, 5);
+
+console.log(total);
