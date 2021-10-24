@@ -45,6 +45,7 @@ const images = [
   'images/image006.jpg',
 ];
 
+
 let currentIndex = 0;
 
 const mainImage = document.getElementById('carousel__main');
