@@ -1,17 +1,3 @@
-'use strict'
-
-const global = 'global'
-
-function check (){
-  // const local = 'local'
-  // console.log(local);
-
-  console.log(global);
-
-}
-
-// console.log(global);
-  // console.log(local);
-
-
-check()
+const test = document.getElementById('test');
+const testList = document.querySelectorAll('.test_list');
+console.log(testList);
