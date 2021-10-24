@@ -1,3 +1,8 @@
 const test = document.getElementById('test');
-const testList = document.querySelectorAll('.test_list');
+test.classList.add('red');
+
+const testList = document.querySelector('.test_list');
+testList.classList.remove('blue');
+
+console.log(test);
 console.log(testList);
