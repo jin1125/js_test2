@@ -15,7 +15,7 @@ console.log(formTestYourNameValue);
 
 formTestYourName.addEventListener('input',()=>{
   let yourNameValue = document.getElementById('your_name_value');
-  yourNameValue.textContent = formTestYourName.value.length;
+  yourNameValue.textContent = formTestYourName.value;
 })
 
 // const formTest2 = document.forms.form_test2;
