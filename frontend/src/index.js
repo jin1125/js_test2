@@ -1,4 +1,5 @@
 import './style.scss'
+import 'whatwg-fetch'
 require('intersection-observer');
 
 
