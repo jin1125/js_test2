@@ -5,8 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .w300{
+      width: 300px;
+    }
+  </style>
 </head>
 <body>
+  <div id="image" class="w300"></div>
   
   <script>
     const url = 'https://dog.ceo/api/breeds/image/random';
@@ -16,6 +22,24 @@
     const fetchTest = fetch(url,options)
     .then(response =>response.json())
     console.log(fetchTest);
+
+    function getDogImage (url,options){
+      return fetch(url,options)
+    .then(response =>response.json())
+    }  
+
+    async function getImage(url,options){
+      const response = await getDogImage(url,options);
+      // console.log(response.message);
+      const imageDiv = document.getElementById('image');
+      const imageElement = document.createElement('img')
+      imageElement.src = response.message;
+      // imageElement.width = 300;
+      // document.body.appendChild(imageElement);
+      imageDiv.appendChild(imageElement);
+    }
+
+    getImage(url,options);
 
   </script>
 </body>
