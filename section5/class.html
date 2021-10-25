@@ -9,8 +9,21 @@
 <body>
 
   <script>
-    class Product {
+    class BaseProduct {
+
+      echoProduct(){
+        console.log('parentClass');
+      }
+
+      getProduct(){
+        console.log('parentFunction');
+      }
+    }
+
+
+    class Product extends BaseProduct {
       constructor(productName){
+        super()
         this.product = productName;
       }
 
@@ -21,13 +34,20 @@
       addProduct(item){
         this.product += item;
       }
+
+     static testProduct(){
+        console.log('静的メソッドです');
+      }
     }
+
+    Product.testProduct();
 
     const product = new Product('test');
     // console.log(product.product);
     product.getProduct();
     product.addProduct('add');
     product.getProduct();
+    product.echoProduct();
 
   </script>
 </body>
