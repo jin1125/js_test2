@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-  
+
   <script>
-    function test1(){
+    function test1() {
       return 'function1'
     }
 
     console.log(test1());
 
-    const test2 = function(){
+    const test2 = function () {
       return 'function2'
     }
 
     console.log(test2());
 
-    const test3 = ()=>{
+    const test3 = () => {
       return 'function3'
     }
 
     console.log(test3());
 
-    function promiseTest1 (){
-      return new Promise((ok)=>{
+    function promiseTest1() {
+      return new Promise((ok) => {
         ok('promise1')
       })
     };
 
     console.log(promiseTest1());
 
-    const promiseTest2 = new Promise((ok)=>{
+    const promiseTest2 = new Promise((ok) => {
       ok('promise2')
     })
 
     console.log(promiseTest2);
 
-    function promiseTest3 (input){
-      return new Promise((ok)=>{
+    function promiseTest3(input) {
+      return new Promise((ok) => {
         ok(`promise${input}.`)
       })
     };
@@ -50,31 +52,46 @@
     console.log(promiseTest3('3'));
 
 
+    console.log(1);
+    promiseTest(300,2)
+    .then((change1)=>{
+      return promiseTest(change1,3)
+    })
+    .then((change2)=>{
+      return promiseTest(change2,2)
+    })
+    .catch(e =>{
+      console.log(e);
+    })
+    console.log(3);
 
-
-    function promiseTest4(pay){
-      return new Promise((ok,ng)=>{
-        if(pay > 100){
-          let change = pay - 100; 
-          ok(change)
-        }
-        ng('no money')
+    function promiseTest(pay, seconds) {
+      return new Promise((ok, ng) => {
+        setTimeout(() => {
+          if (pay > 100) {
+            let change = pay - 100;
+            console.log(`${seconds}seconds.$${change}.`);
+            ok(change)
+          }
+          ng('no money')
+        }, seconds * 1000)
       })
     }
 
-    console.log(promiseTest4(80).catch((e)=>{
-      console.log(e);
-    }));
+    // console.log(promiseTest4(80).catch((e) => {
+    //   console.log(e);
+    // }));
 
-    promiseTest4(18 0).then((change1)=>{
-      console.log(change1);
-      return promiseTest4(change1)
-    }).then(change2=>{
-      console.log(change2);
-    }).catch((e)=>{
-      console.log(e);
-    })
+    // promiseTest4(180).then((change1) => {
+    //   console.log(change1);
+    //   return promiseTest4(change1)
+    // }).then(change2 => {
+    //   console.log(change2);
+    // }).catch((e) => {
+    //   console.log(e);
+    // })
 
   </script>
 </body>
+
 </html>
