@@ -7,6 +7,6 @@ module.exports = {
     filename: 'bundle.js',
   },
   module: {
-    rules: [{ test: /\.css$/, use: ['style-loader','css-loader'] }],
+    rules: [{ test: /\.(sass|scss)$/, use: ['style-loader','css-loader','sass-loader'] }],
   },
 };
