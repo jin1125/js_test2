@@ -13,6 +13,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-loader": "^8.2.3",
     "css-loader": "^6.4.0",
     "node": "^17.0.1",
     "sass-loader": "^12.2.0",
